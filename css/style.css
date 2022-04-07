@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+}
+/* Responsive Background */
+@media (orientation: portrait){
+    body{
+        background-image: url(../images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+}
+/* Card */
+.container{
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+}
+.mainImage{
+    margin-bottom: 15px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/* The main content (title + info)*/
+.content{
+    margin: auto;
+    width: 80%;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 15px;
+}
+.content h1{
+    color: black;
+}
+/* Subscription Info */
+.subInfo{
+    line-height: 1.5;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin: auto;
+    width: 80%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.icon{
+    margin-right: 20px;
+}
+.box2{
+    color: hsl(224, 23%, 55%);
+    margin-right: 70px;
+}
+.box2 .p1{
+    color: black;
+    font-weight: 700;
+}
+.box3{
+    font-weight: 700;
+    text-decoration: none;
+}
+.box3:hover{
+    opacity: .6;
+}
+/* Botton */
+.button{ 
+    height: 45px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 20px hsla(223, 47%, 23%, 0.527);
+}
+.button:hover{
+    opacity: .6;
+}
+/* Cancel Order */
+.order{
+    font-weight: 700;
+    font-size: 16px;
+}
+.orderLink{
+    color: black;
+    text-decoration: none;
+}
